@@ -21,24 +21,40 @@ header{
     border-radius: 2px;
     padding: 20px;
     cursor: pointer;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 .nav-logo img{
-    width: 100px;
+    width: 90px;
+    top: 29px;
+    left: 54px;
+    gap: 5px;
 }
 
 .nav-list{
     display: flex;
     column-gap: 2rem;
-    font-size: 15px;
     list-style: none;
     cursor: pointer;
+    font: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
 }
 
+.nav-list a{
+    text-decoration: none;
+    color: #000;
+}
 .nav-item{
     display: flex;
     column-gap: 2rem;
+    font: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
 }
 
 .hero-section{
@@ -87,7 +103,7 @@ article {
     font: Poppins;
     font-size: 35px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 50px;
     size: 52px;
     letter-spacing: 0px;
 }
@@ -146,7 +162,7 @@ article {
 
 .item-content span img{
     width: 381px;
-    height: 480px;
+    height: auto;
     top: 1008px;
     left: 933px;
 }
@@ -167,4 +183,30 @@ article {
 align-items: center;
 text-decoration: none;
 color: #333333;
+}
+
+.product-content{
+    padding: 20px;
+}
+
+
+
+.products-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+}
+.products-items img{
+    border-radius: 10px;
+}
+.product-text span h1{
+    text-align: center;
+}
+
+
+.price{
+    display: flex;
 }
