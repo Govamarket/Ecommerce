@@ -147,7 +147,7 @@ article {
     font: poppins;
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
+    line-height: 1.7;
     letter-spacing: 0px;
     color: #333333;
 }
@@ -196,17 +196,65 @@ color: #333333;
     grid-template-columns: auto auto auto auto;
     place-content: center;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 30px;
     padding: 20px;
 }
-.products-items img{
-    border-radius: 10px;
-}
+
 .product-text span h1{
     text-align: center;
+    font: poppins;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.products-items div{
+    line-height: 1.6;
+    font: Poppins;
+}
+
+.products-items  .intro{
+    font-weight: 600;
+    color: #3A3A3A;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    cursor: pointer;
 }
 
 
 .price{
     display: flex;
+    font-size: 13px;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.price del{
+    color: #898989;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height: 150%;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.price .asset{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: poppins;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+.price .figure{
+    font: poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    cursor: pointer;
 }
