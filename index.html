@@ -17,19 +17,22 @@
         <section class="nav-logo">
           <img src="./img/logo/Frame 168 (1).png" alt="" />
         </section>
+
         <!-- Nav-links-->
         <ul class="nav-list">
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>\
-        <!-- N -->
+          <li id="home">Home</li>
+          <li id="shop">Shop</li>
+          <li id="about">About</li>
+          <li id="contact">Contact</li>
+        </ul>
+
+        <!-- icon items-->
         <section class="nav-item">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-duotone fa-regular fa-magnifying-glass"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-cart-shopping"></i>
+          <i class="fa-regular fa-user" id="icon"></i>
+          <i class="fa-solid fa-magnifying-glass" id="icon"></i>
+          <i class="fa-solid fa-cart-shopping" id="icon"></i>
+          <i class="fa-regular fa-heart" id="icon"></i>
+          
         </section>
       </nav>
 
@@ -37,22 +40,58 @@
       <div class="hero-section">
         <article>
           <section class="head-text">
-            <span><p>New Arrival</p></span>
+            <span class="text-p"><p>New Arrival</p></span>
             <span
               ><h1>Discover Our <br />New Collection</h1></span
             >
-            <span
-             class="context" ><p>
+            <span class="context"
+              ><p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut elit
                 tellus, luctus nec ullamcorper mattis.
               </p></span
             >
-            <section><input type="button" value="Buy Now" id="buy-now"></section>
+            <!-- Input buy now on the hero-section -->
+            <section class="button-section">
+              <input type="button" value="Buy Now" id="buy-now" />
+            </section>
           </section>
-        
         </article>
       </div>
     </header>
+
+    <!-- item section -->
+    <section class="container">
+      <section class="text-header">
+        <span><h1>Browse The Range</h1></span>
+        <span
+          ><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span
+        >
+      </section>
+      <section class="item-content">
+      <div>
+        <span
+          ><img src="./img/new-item/Mask Group (1).png" alt="#loading"
+        /></span>
+        <span
+          ><a href="#" id=""><p>Dining</p></a></span
+        >
+      </div>
+      <div>
+        <span
+          ><img src="/img/new-item/Image-living room.png" alt="#loading"
+        /></span>
+        <span
+          ><a href="#" id=""><p>Living</p></a></span
+        >
+      </div>
+      <div>
+        <span><img src="/img/new-item/Mask Group.png" alt="#loading" /></span>
+        <span
+          ><a href="#" id=""><p>Bedroom</p></a></span
+        >
+      </div>
+    </section>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
