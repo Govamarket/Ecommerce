@@ -785,8 +785,7 @@ h2 {
     }
     
     .grid-item1 img {
-        height: auto;
-        width: 100%;
+      visibility: hidden;
     }
     
     /* Discount tags */
