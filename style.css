@@ -613,20 +613,6 @@ h2 {
 
 /* jdoeidededdediededi */
 
-@media (max-width: 768px) {
-    .room-inspiration {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image-slider {
-        flex-direction: column;
-    }
-
-    .text-content {
-        margin-bottom: 20px;
-    }
-}
 
 
 .furniture-gallery {
@@ -661,7 +647,12 @@ h2 {
     border-radius: 8px;
     overflow: hidden;
 }
-
+ .grid-item1 img{
+    width: 150px;
+    height: 60vh;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+ }
 .grid-item img {
     width: 100%;
     height: auto;
@@ -674,15 +665,85 @@ h2 {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 20px;
+        background-size: contain;
+    }
+
+    article {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .head-text h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .head-text .text-p, .head-text .context p {
+        font-size: 14px;
+    }
+
+    .button-section {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .item-content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .item-content span img {
+        width: 100%;
+    }
+
+    .products-items {
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+
+    .button-show #show-more {
+        width: 100%;
+        height: 45px;
+    }
+
+    .inspiration-section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .room-card {
+        width: 100%;
+        padding: 15px;
     }
 }
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
