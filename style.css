@@ -140,10 +140,10 @@
 .hero-container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
     z-index: 1s;
-    width: 550px;
+    width: 500px;
     background: #FFF3E3;
     border-radius: 10px;
     right: 2%;
@@ -822,7 +822,21 @@ h2 {
     .hero {
         height: 70vh;
         min-height: 500px;
+        padding: 20px;
     }
+
+    .hero-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        position: absolute;
+        z-index: 1s;
+        width: 500px;
+        background: #FFF3E3;
+        border-radius: 10px;
+        right: 0;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -862,90 +876,19 @@ h2 {
         height: 60vh;
         min-height: 400px;
     }
+
+    .hero-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        position: absolute;
+        z-index: 1s;
+        width: 500px;
+        background: #FFF3E3;
+        border-radius: 10px;
+        right: 0;
+    }
 }
 
 
     
-
-    .head-text h1 {
-        font-size: 24px;
-        line-height: 1.3;
-    }
-    
-    .head-text .text-p {
-        font-size: 14px;
-        letter-spacing: 1px;
-    }
-    
-    .button-section {
-        position: relative;
-        left: auto;
-        bottom: auto;
-        margin-top: 15px;
-    }
-    
-    /* Item Content */
-    .item-content {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 2rem;
-    }
-    
-    .item-content span img {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .text-header span h2 {
-        font-size: 1.8rem;
-    }
-    
-    /* Products Section */
-    .products-items {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-    
-    /* Room Inspiration Section */
-    .room-inspiration {
-        flex-direction: column;
-        padding: 30px 15px;
-    }
-    
-    .text-content {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    
-    .image-slider {
-        flex-direction: column;
-    }
-    
-    .room-card {
-        width: 100%;
-        max-width: 300px;
-        height: 250px;
-    }
-    
-    /* Furniture Gallery */
-    .furniture-gallery {
-        padding: 30px 15px;
-    }
-    
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .grid-item1 img {
-      display: none;
-    }
-    
-    /* Discount tags */
-    [class^="discount-"] {
-        width: 30px;
-        height: 30px;
-        font-size: 10px;
-        padding-left: 5px;
-    }
-
-
