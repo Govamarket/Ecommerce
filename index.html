@@ -4,41 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce</title>
-    <script
-      src="https://kit.fontawesome.com/87a66ec4e9.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header structure -->
     <header>
       <nav class="navbar">
-        <section class="nav-logo">
-          <img src="./img/logo/Frame 168 (1).png" alt="" />
-        </section>
-
-        <!-- Nav-links-->
-        <ul class="nav-list">
-          <a href="#"><li id="home">Home</li></a>
-          <a href="#"> <li id="shop">Shop</li></a>
-          <a href="#"><li id="about">About</li></a>
-          <a href="#"> <li id="contact">Contact</li></a>
-        </ul>
-
-        <!-- icon items-->
-        <section class="nav-item">
-          <i class="fa-regular fa-user" id="icon"></i>
-          <i class="fa-solid fa-magnifying-glass" id="icon"></i>
-          <i class="fa-solid fa-cart-shopping" id="icon"></i>
-          <i class="fa-regular fa-heart" id="icon"></i>
-
-        </section>
-        <section class="toggle">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark" id="cancel"></i>
-        </section>
-      </nav>
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Furniro</a>
+            
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="navbar-menu" id="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link active">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Shop</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
       <!-- Hero section -->
       <div class="hero-section">
