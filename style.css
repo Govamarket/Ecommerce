@@ -1,3 +1,5 @@
+
+Copy
 /* Base Styles */
 * {
     margin: 0;
@@ -24,10 +26,18 @@
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #333;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .navbar-menu {
@@ -48,12 +58,44 @@
 }
 
 .navbar-link:hover {
-    color: #8b5a2b; /* Brown color for hover */
+    color: #8b5a2b;
 }
 
 .navbar-link.active {
     color: #8b5a2b;
     font-weight: 600;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-link {
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.icon-link:hover {
+    color: #8b5a2b;
+}
+
+.icon-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #8b5a2b;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Mobile Menu Toggle */
@@ -686,16 +728,20 @@ h2 {
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 768px) {
     /* General adjustments */
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+    
     .navbar-toggle {
         display: flex;
     }
     
     .navbar-menu {
         position: fixed;
-        top: 70px;
+        top: 80px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 80px);
         background-color: #fff;
         flex-direction: column;
         align-items: center;
@@ -709,6 +755,32 @@ h2 {
     
     .navbar-item {
         margin: 1.5rem 0;
+    }
+    
+    .navbar-icons {
+        margin-left: auto;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .icon-link {
+        font-size: 1rem;
+    }
+    
+    .navbar-icons {
+        gap: 1rem;
+    }
+    
+    .logo-img {
+        height: 30px;
     }
 }
     

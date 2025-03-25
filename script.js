@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const navbarMenu = document.getElementById('navbar-menu');
+    const searchIcon = document.querySelector('.search-icon');
     
     // Toggle mobile menu
     mobileMenu.addEventListener('click', function() {
@@ -36,6 +37,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update active class
             navLinks.forEach(item => item.classList.remove('active'));
             this.classList.add('active');
+        });
+    });
+    
+    // Search icon functionality
+    searchIcon.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Add your search functionality here
+        console.log('Search icon clicked');
+        // Example: window.location.href = '/search';
+    });
+    
+    // Other icons functionality
+    const icons = document.querySelectorAll('.icon-link:not(.search-icon)');
+    icons.forEach(icon => {
+        icon.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log(`${this.querySelector('i').className.split(' ')[1]} icon clicked`);
         });
     });
 });
