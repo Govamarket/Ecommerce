@@ -888,6 +888,10 @@ h2 {
         border-radius: 10px;
         right: 0;
     }
+
+    .item-content {
+        flex-direction: column;
+    }
 }
     
 
