@@ -833,6 +833,14 @@ h2 {
         border-radius: 10px;
         right: 0;
     }
+  
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 1000px;
+        margin: auto;
+    }
     
 }
 
@@ -889,6 +897,10 @@ h2 {
     }
 
     .item-content {
+        flex-direction: column;
+    }
+    .gallery-grid {
+        display: flex;
         flex-direction: column;
     }
 }
@@ -975,7 +987,6 @@ h2 {
     .gallery-grid {
         display: grid;
         grid-template-columns: 4, 1fr;
-        position: sticky;
     }
     
     .grid-item1 img {
