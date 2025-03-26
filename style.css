@@ -888,7 +888,7 @@ h2 {
         background: #FFF3E3;
         border-radius: 10px;
         right: 0;
-        margin-top: -40%;
+        margin-top: -50%;
     }
 
     .item-content {
@@ -970,12 +970,13 @@ h2 {
     .gallery-grid {
         display: grid;
         grid-template-columns: 3, 1fr;
+        position: absolute;
     }
     
     .grid-item1 img {
       display: block;
       height: 50vh;
-      position: absolute;
+      /* position: absolute; */
     }
     
     /* Discount tags */
