@@ -889,8 +889,6 @@ h2 {
         right: 0;
     }
 }
-
-
     
 
     .head-text h1 {
@@ -919,8 +917,8 @@ h2 {
     }
     
     .item-content span img {
-        width: 100%;
-        max-width: 300px;
+        width: 300px;
+        max-width: 100%;
     }
     
     .text-header span h2 {
@@ -947,9 +945,11 @@ h2 {
     }
     
     .image-slider {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
     }
     
+
     .room-card {
         width: 100%;
         max-width: 300px;
@@ -962,11 +962,14 @@ h2 {
     }
     
     .gallery-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 3, 1fr;
     }
     
     .grid-item1 img {
-      display: none;
+      display: block;
+      height: 50vh;
+      position: absolute;
     }
     
     /* Discount tags */
