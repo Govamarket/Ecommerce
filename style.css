@@ -766,6 +766,10 @@ h2 {
     transform: scale(1.05);
 }
 
+.footer-p a{
+    color: #9F9F9F;
+}
+
 
 /* Mobile Responsive Styles */
 
@@ -841,6 +845,11 @@ h2 {
         max-width: 1000px;
         margin: auto;
     }
+
+    
+    footer{
+        flex-direction: column;
+    }
     
 }
 
@@ -903,6 +912,8 @@ h2 {
         display: flex;
         flex-direction: column;
     }
+
+       
 }
     
 
@@ -1003,4 +1014,24 @@ h2 {
         padding-left: 5px;
     }
 
+    .footer-section{
+        padding-top: 10px;
+        padding: 20px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        line-height: 1.7;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .col-4 input{
+        border: 0;
+        outline: 0;
+    }
 
